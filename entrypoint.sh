@@ -61,4 +61,4 @@ generate_fuzzer
 build_dict
 build_fuzzer $@
 cd "$ROOT_DIR"
-./fuzzer -dict=dict -max_total_time=$TIME out/
+./fuzzer -dict=dict -max_total_time=$TIME -fork=1 --ignore_ooms --ignore_timeout out/
